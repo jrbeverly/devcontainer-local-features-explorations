@@ -1,0 +1,6 @@
+{
+  "id": "command",
+  "version": "0.1.0",
+  "name": "Command",
+  "description": "Contract: installs one command on PATH with a --help response."
+}

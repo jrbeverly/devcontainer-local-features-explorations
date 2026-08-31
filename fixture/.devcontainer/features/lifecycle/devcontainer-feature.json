@@ -1,0 +1,7 @@
+{
+  "id": "lifecycle",
+  "version": "0.1.0",
+  "name": "Lifecycle",
+  "description": "Contract: carries one executable drop-in and invokes a minimal discovery runner during the postCreate lifecycle phase, recording evidence at LIFECYCLE_EVIDENCE_PATH.",
+  "postCreateCommand": "lifecycle-runner"
+}

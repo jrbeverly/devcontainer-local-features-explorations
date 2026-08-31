@@ -1,0 +1,5 @@
+# Ignored overlay path: documentation features materialize Markdown here
+overlay/
+
+# Lifecycle evidence path: lifecycle drop-ins record execution here
+.lifecycle/

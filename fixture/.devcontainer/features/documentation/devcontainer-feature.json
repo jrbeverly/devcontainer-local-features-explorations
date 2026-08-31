@@ -1,0 +1,7 @@
+{
+  "id": "documentation",
+  "version": "0.1.0",
+  "name": "Documentation",
+  "description": "Contract: carries one Markdown source and materializes it into the ignored overlay path (OVERLAY_PATH) during the workspace-aware lifecycle.",
+  "postCreateCommand": "mkdir -p ${OVERLAY_PATH} && cp /usr/local/share/documentation-feature/NOTES.md ${OVERLAY_PATH}/NOTES.md"
+}

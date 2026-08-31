@@ -1,0 +1,6 @@
+#!/bin/sh
+mkdir -p "${LIFECYCLE_EVIDENCE_PATH}"
+for hook in /usr/local/lib/lifecycle-dropins/*.sh; do
+    "$hook"
+    echo "$(basename "$hook")" >> "${LIFECYCLE_EVIDENCE_PATH}/executed"
+done

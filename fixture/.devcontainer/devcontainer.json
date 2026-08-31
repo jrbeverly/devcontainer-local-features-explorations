@@ -1,0 +1,18 @@
+{
+  "name": "local-features-fixture",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "vscode",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  // Locked lifecycle phase: postCreate (workspace is mounted there, so both
+  // locked paths below are writable during it).
+  "containerEnv": {
+    "OVERLAY_PATH": "/workspace/overlay",
+    "LIFECYCLE_EVIDENCE_PATH": "/workspace/.lifecycle"
+  },
+  "features": {
+    "./features/command": {},
+    "./features/documentation": {},
+    "./features/lifecycle": {}
+  }
+}

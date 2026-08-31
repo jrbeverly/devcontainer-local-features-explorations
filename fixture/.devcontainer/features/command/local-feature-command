@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ "$1" = "--help" ]; then
+    echo "local-feature-command"
+    echo "Installed by devcontainer feature: ./features/command"
+    exit 0
+fi
